@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.red{
+    color: red;
+    font-weight: bold;
+    
+}
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: #EC3D2F;
+    transform-origin: 0%;
+    z-index: 1;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  img{
+    max-width: 100%;
+    display: block;
+  }
+  body{
+    background-color: #f6f6f6;
+  }
+  .testimonial-container{
+    max-width: 800px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+  .slider-container .review-img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .title{
+    text-align: center;
+    margin-bottom: 2rem;
+
+  }
+  .title h1{
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .title p{
+    font-size: 1.5rem;
+  }
+  .slider-container {
+    user-select: none;
+    position: relative;
+    padding-inline: 1rem;
+  }
+  .slider-container .quote{
+    position: absolute;
+    z-index: -1;
+  }
+  .slider-container .quote-top{
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+  }
+  .slider-container .quote-bottom{
+    position: absolute;
+    bottom: -3rem;
+    right: -0.5rem;
+    transform: rotate(180deg);
+  }
+  .splide__slide{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 3rem 1.875rem;
+    border-radius: 1rem;
+    gap:1rem;
+  }
+  .slider-container .content .text{
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  .slider-container .content .rating{
+    display: inline-block;
+    line-height: 1;
+  }
+  .slider-container .content .star{
+    color: #ff6f59;
+    font-size: 1.1rem;
+  }
+  .slider-container .content .user{
+    font-weight: 700;
+  }
+  .splide__pagination__page.is-active{
+    background-color: #ff6f59;
+  }
+  .splide__pagination__page{
+    height: 10px;
+    width: 10px;
+    opacity: 1;
+  }
+  .splide__arrow{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    color: #505050;
+    font-weight: 300;
+    margin: 95px;
+    margin-top: 10rem;
+    margin-left: 7rem;
+  }
